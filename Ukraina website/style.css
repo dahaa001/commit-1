@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+body {
+    margin: 0;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%; 
+    background-color: whitesmoke;
+    height: 8h;
+}
+
+.logo{
+    cursor: pointer;
+    height: 5rem;
+    width: 5rem;
+    background-color: whitesmoke;
+}
+
+.header-nav {
+    display: flex;
+    gap: 12rem;
+    font-size: 30px;
+    
+
+}
+.cta{
+    font-size: 2rem; 
+    color: yellow;
+    border: 2px solid rgb(15, 102, 241);
+    background-color: rgb(15, 102, 241);
+    padding: 1rem;
+    border-radius: 4rem;
+}
+
+a {
+    height: fit-content;
+}
+
+header a{
+    text-decoration: none;
+}
+.fun {
+    width: 100%;
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    background-image:url('images/ukrainian-flag.jpeg');
+    height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y:-150px;
+}
+
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 5rem;
+    color: #FFD500 ;
+    text-decoration:underline #005BBB ;
+    border: 2px solid #005BBB;
+    background-color: #005BBB;
+    padding: 1rem;
+    border-radius: 4rem;
+  }
