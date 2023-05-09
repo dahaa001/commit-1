@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kalkulator</title>
+</head>
+<body>
+
+    <script>
+        console.log("Velkommen til SAS flyreise kalkulator")
+    
+        function checkWeight() {
+            const input = document.getElementById("input-number").value
+            console.log(input)
+            if (input < 2) {
+                // større
+                console.log("Du må minimum ha minst 2 kg bagasje ")
+            }
+            else if (input > 32) {
+                console.log("Du kan ha maksimum ha 32 kg i Bagasje ...")
+            } 
+            else if (input > 23) {
+                const gebyr = (input-23) * 130
+                console.log("DU må betale 130 per kg ofver 23 kg du skylder nå " + gebyr + "kr i overvekt")
+
+            }
+            
+        } 
+        
+    </script>
+    <input type="number" name="" id="input-number">
+    <button id="button" onclick="checkWeight()">check number</button>
+    <input type="checkbox" name="" id="input-check">
+
+   
+</body>
+</html>
+
+

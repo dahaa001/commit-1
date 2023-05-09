@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="input-check">Entusiasme:</label>
+    <input type="checkbox" name="" id="input-check">
+    <input type="text" name="" id="output">
+    <button onclick="handleHallo()">Si Hallo</button>
+
+    <script>
+        function handleHallo() {
+            const box = document.getElementById("input-check")
+            const output = document.getElementById("output")
+            
+            if (box.checked === true) {
+                output.value = "Hallo!"
+            } else {
+                output.value = "Hallo..."
+            }
+        }
+        
+
+    </script>
+
+    <h2>Tall eksempel</h2>
+
+    <input type="number" name="" id="input-number">
+    <button id="button" onclick="checkNumber()">check number</button>
+
+    <script>
+        function checkNumber() {
+            const spritFlasker = parseInt(document.getElementById("input-number").value)
+            if (spritFlasker >= 2) {
+                console.log("Over tollgrensen!")
+            } else {
+                console.log("Under tollgrensen")
+            }
+
+        }
+    </script>
+
+
+    <h2>Flere ting</h2>
+
+    <button onclick="sjekkFlereTing()">Sjekk flere ting</button>
+    <script>
+        function sjekkFlereTing(){
+            const box = document.getElementById("input-check")
+            const output = document.getElementById("output")
+            const spritFlasker = parseInt(document.getElementById("input-number").value)
+
+
+            if(box.checked && spritFlasker > 2) {
+                console.log("Både boks og over to!")
+            } 
+            if (box.checked || spritFlasker > 2) {
+                console.log("Enten boks, eller over to")
+            }
+        }
+    </script>
+
+    
+    
+</body>
+</html>

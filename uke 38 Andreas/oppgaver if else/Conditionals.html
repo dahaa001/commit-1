@@ -1,0 +1,34 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <input type="number" name="" id="input-number">
+    <button id="button" onclick="checkNumber()">check number</button>
+    <input type="checkbox" name="" id="input-check">
+    
+    <script>
+        function checkNumber() {
+            const input = document.getElementById("input-number").value
+            console.log(input)
+            if (input >= 16 && input < 25) {
+                // større
+                console.log("Du er gammel nok til og øvelsekjøre!")
+            }
+            else if (input < 16) {
+                console.log("Du er ikke gammel nok til og øvelsekjøre...")
+            } 
+            else if (input >= 25) {
+                console.log("Du trenger ikke bestått grunnkurs..")
+            }
+            
+        } 
+        
+    </script>
+   
+</body>
+</html>
